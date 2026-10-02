@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vetka – Git for Unity</title>
+  <meta name="description" content="A Git client inside the Unity Editor, in the style of JetBrains IDEs. Commit, update, branches, log, stash, diff and blame without leaving Unity.">
+  <link rel="canonical" href="https://upwake.dev/vetka/">
+  <link rel="icon" href="../assets/vetka.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="5" r="2.5"/><circle cx="8" cy="19" r="2.5"/><circle cx="17" cy="7" r="2.5"/><path d="M8 7.5v9"/><path d="M8 15.5c0-4.5 9-3.5 9-6"/></svg>
+        Vetka
+      </a>
+      <nav class="site-nav">
+        <a href="#features">Features</a>
+        <a href="#requirements">Requirements</a>
+        <a href="#getting-started">Getting started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <h1>Vetka – Git for Unity</h1>
+      <p>A Git client inside the Unity Editor, in the style of JetBrains IDEs. It runs the Git installed on your machine, so it works with any repository and hosting.</p>
+    </div>
+
+    <section id="features">
+      <div class="wrap">
+        <h2>Features</h2>
+        <ul class="features">
+          <li class="key"><strong>Never left half-merged</strong><span>Update Project, merge, rebase, checkout and applying a stash either finish or are rolled back completely, with your local changes restored. On a conflict Vetka lists the files, so you can resolve them with your usual Git tool and try again.</span></li>
+          <li><strong>Changes tab</strong><span>Tick files, write a message, Commit or Commit and Push. Moves and renames show as one row.</span></li>
+          <li><strong>Update Project</strong><span>Fetch, then merge or rebase, with your local changes stashed and restored automatically.</span></li>
+          <li><strong>Branches</strong><span>Local, remote and recent branches with search and favourites. Checkout, merge, rebase, delete.</span></li>
+          <li><strong>Log, Diff and Blame</strong><span>Recent commits and their files, line-by-line history of a file.</span></li>
+          <li><strong>Stash and patches</strong><span>Put changes aside and bring them back, or save them to a patch file.</span></li>
+          <li><strong>Project window status</strong><span>Changed files get a badge, the current branch is in the window title.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="requirements">
+      <div class="wrap">
+        <h2>Requirements</h2>
+        <ul class="plain">
+          <li>Unity 6.0 LTS or newer.</li>
+          <li>Git 2.31 or newer, installed separately.</li>
+          <li>The Unity project inside a Git repository.</li>
+          <li>Working Git authentication: if <code>git fetch</code> works in a terminal, it works in Vetka. Vetka never asks for passwords.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="getting-started">
+      <div class="wrap">
+        <h2>Getting started</h2>
+        <ul class="plain">
+          <li>Everything is under <strong>Tools → Git</strong>.</li>
+          <li>Commit from the <strong>Changes</strong> tab: tick the files, type a message, click <strong>Commit</strong> or <strong>Commit and Push</strong>.</li>
+          <li>Right-click files in the Changes tab or the Project window for Show Diff, Blame, Rollback and more.</li>
+          <li><strong>Tools → Git → Settings...</strong> sets the path to Git (found automatically), merge or rebase for Update Project, and display options.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Anton Pocius · <a href="mailto:vetka@upwake.dev">vetka@upwake.dev</a> · <a href="../">upwake.dev</a></p>
+      <p>Git is a trademark of Software Freedom Conservancy. Unity is a trademark of Unity Technologies. Vetka is not affiliated with or endorsed by either.</p>
+    </div>
+  </footer>
+</body>
+</html>
